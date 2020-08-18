@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
-import "net/http"
-import "github.com/Pallinder/go-randomdata"
+import (
+	"fmt"
+	"net/http"
+ 	"github.com/Pallinder/go-randomdata"
+)
 
 func main() {
 	http.HandleFunc("/hello", func(writer http.ResponseWriter, request *http.Request) {
