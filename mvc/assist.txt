@@ -1,0 +1,4 @@
+// get all users
+http://localhost:8080/users
+// get user by id 
+http://localhost:8080/users?user_id=1
