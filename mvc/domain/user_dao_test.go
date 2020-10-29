@@ -27,3 +27,9 @@ func TestGetUserNoError(t *testing.T) {
 	assert.EqualValues(t, "Gupta", user.LastName)
 	assert.EqualValues(t, "guptarahul@gmail.com", user.Email)
 }
+
+func TestGetUsers(t *testing.T) {
+	allUsers := GetUsers()
+	assert.NotNil(t, users)
+	assert.EqualValues(t, allUsers, users)
+}
